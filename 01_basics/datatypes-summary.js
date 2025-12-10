@@ -46,3 +46,29 @@ const me = null;
 console.log(typeof me); // object
 
 console.log(typeof myFunction); // object function
+
+/******************************************/
+// Stack Memory (Primitive) -> copy
+// Heap Memory (Non Primitive) -> refrence (original value)
+/******************************************/
+
+let myChannel = "NerdChannel";
+
+let anotherName = myChannel;
+anotherName = "newChannelNerd";
+
+console.log(myChannel);
+console.log(anotherName);
+
+let userOne = {
+  name: "user 1",
+  email: "user@google.com",
+  upi: "user@ybl",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "user2@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
