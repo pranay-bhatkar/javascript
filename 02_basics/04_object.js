@@ -1,7 +1,7 @@
 /*
  * Tpoic : Object part 2
  */
-
+/*
 // const tinderUser = new Object(); -> singletone object
 
 const tinderUser = {}; // -> non singleton object
@@ -68,3 +68,34 @@ console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+
+*/
+/*
+ * Topice - object de-strcture
+ */
+
+const course = {
+  coursename: "js in hindi",
+  price: "999",
+  courseInstrctor: "pranay",
+};
+
+// course.courseInstrctor
+// const { courseInstrctor } = course;
+const { courseInstrctor: instructor } = course;
+console.log(instructor);
+
+// api
+//json
+
+// {
+//     "name":"abc",
+//     "price":123,
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
